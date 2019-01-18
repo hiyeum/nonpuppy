@@ -1,0 +1,353 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Reenie+Beanie|Yellowtail');
+
+/* reset */
+	html,body {margin:0; padding:0; font-family:"맑은 고딕","Malgun Gothic",Dotum,Arial,sans-serif; font-weight:400; font-size:14px; height:100%; color:#666; -webkit-text-size-adjust:none; position:relative; line-height:1.2;}
+	dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote {margin:0; padding:0; -webkit-text-size-adjust:none;}
+	th,td,input,textarea,select {font-size:14px; color:#666; font-family:"맑은 고딕","Malgun Gothic",Dotum,Arial,sans-serif; font-weight:400; -webkit-text-size-adjust:none;}
+	th,td {word-break:break-all; word-wrap:break-word; -webkit-text-size-adjust:none;}
+	table {border-spacing:0; border-collapse:collapse; -webkit-text-size-adjust:none; border:0; table-layout:fixed;}
+	address,caption,cite,code,dfn,var {font-style:normal; font-weight:400; -webkit-text-size-adjust:none;}
+	em {font-style:normal; -webkit-text-size-adjust:none;}
+	ol,ul,li {list-style:none;}
+	h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:700;}
+	abbr,acronym {border:0;}
+	hr,legend,caption {visibility:hidden; overflow:hidden; line-height:0; width:0; height:0; margin:0; padding:0;}
+	img,fieldset {border:0 none;}
+	label {cursor:pointer;}
+	a {color:inherit;}
+	a:link, a:visited, a:hover {color:inherit; text-decoration:none;}
+	a:active {text-decoration:none;}
+	input,img {vertical-align:middle;}
+
+
+
+
+.header_container {
+	position: fixed;
+	width: 1920px;
+	left: 0;
+	height: 100px;
+	text-align: center;
+	z-index: 2000;
+}
+
+.header_container .header_inner {
+	width:1280px; height:100%;
+		margin:0 auto; 
+		 left: 0%;
+		 top: 50%;
+		 margin-top: 40px;
+		}
+
+
+.header_container .header_inner li{
+	float: right;
+	left: 1280px;
+	/*box-sizing: border-box;*/
+	margin-left:40px;
+	color: #603913;
+	text-align: center;
+}
+
+
+.header_container .header_inner li a {
+text-transform:uppercase;
+}
+
+.header_container .header_inner li a:hover{
+color: #7a0026;
+}
+
+.first{
+	float: left;
+	background-color: skyblue;
+	width: 1920px;
+	height: 980px;
+	top: 0;
+	left: 0;
+	background-image: url("../images/images_01.jpg");
+}
+.second{
+	float: left;
+	background-color: skyblue;
+	width: 1920px;
+	height: 980px;
+	top: 0;
+	left: 0;
+	background-image: url("../images/images_02.jpg");
+}
+
+.third{
+	float: left;
+	background-color: skyblue;
+	width: 1920px;
+	height: 980px;
+	top: 0;
+	left: 0;
+	background-image: url("../images/images_03.jpg");
+}
+
+ h1,h2,h3 {
+	font-family: 'Reenie Beanie';
+	font-size: 84px;
+	text-align: center;
+	margin-top: 350px;
+	color: white;
+}
+
+ p {
+	font-size: 26px;
+	text-align: center;
+	top:550px;
+	font-family: 'Reenie Beanie';
+	color: white;
+}
+
+ .btn_next {
+	width: 150px;
+	height: 30px;
+	border: 3px solid white ;
+	margin-left: 45%;
+	margin-top: 2%;
+	text-align: center;
+	line-height: 28px;
+	transition:color 0.5s, background 3s;
+	color: white;
+}
+
+ .btn_next:hover {color:white; background:gray; border-color: gray;}
+
+.swiper-button-prev {
+	color: white;
+}
+
+
+
+/* 두번째 페이지*/
+
+.twopage {
+	width: 1920px;
+	height: 1180px;
+	background-color: #fff6ed;
+}
+
+.twopage h4 {
+	display: block;
+	font-family: 'Reenie Beanie';
+	font-size: 84px;
+	text-align: center;
+	color: brown;
+	padding-top: 100PX;
+}
+
+#bread,#cherry,#pudding {
+	padding-top: 20px;
+	font-family: 'Reenie Beanie';
+	font-size: 48px;
+	text-align:center;
+	color: gray;
+}
+
+#images {
+	width: 1920px;
+	height: 200px;
+}
+.br {
+	position: relative;
+	top:90px;
+	left: 830px;
+	z-index: 300;
+	display: none;
+	
+}
+.ch {
+	position: relative;
+	top:20px;
+	left: 850px;
+	z-index: 400;
+	display: none;
+	
+}
+
+.pu {
+	position: relative;
+	top:30px;
+	left: 810px;
+	z-index: 500;
+	display: none;
+	
+}
+.twopage #bread:hover {
+	color: #8c6239;
+}
+.twopage #cherry:hover {
+	color: #ff4f4f;
+}
+.twopage #pudding:hover {
+	color: #ffc600;
+}
+.twopage .delicious .dish {
+	text-align: center;
+	top:300px;
+	left: 0;
+	z-index: 10;
+}
+/*third page*/
+
+.thirdpage {
+	width: 1920px;
+	height: 1080px;
+	background-color: #fff6ed;
+}
+
+.thirdpage h4 {
+	display: block;
+	font-family: 'Reenie Beanie';
+	font-size: 84px;
+	text-align: center;
+	color: brown;
+	padding-top: 100PX;
+}
+
+.thirdpage div {
+	float: left;
+	width: 500px;
+	height: 500px;
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 80px;
+	text-transform:uppercase;
+	line-height: 450px;
+}
+
+.thirdpage .am {
+	margin-left: 460px;
+	background-color: gray;
+	transition: color 0.5s, background 3s;
+	padding-top: 30px;
+}
+
+.thirdpage .am:hover
+	{color:black; 
+	background-image: url("../images/am.jpg");
+	}
+
+.thirdpage .pm {
+	background-color: gray;
+	transition: color 0.5s, background 3s;
+	padding-top: 30px;
+}
+
+.thirdpage .pm:hover
+	{color:black; 
+	background-image: url("../images/pm.jpg");
+	}
+
+
+
+
+.fourthpage {
+	width: 1920px;
+	height: 1080px;
+	background-color: #fff6ed;
+}
+
+.fifthpage {
+	width: 1920px;
+	height: 1080px;
+	background-color: #fff6ed;
+}
+
+.fourthpage h4 {
+	display: block;
+	font-family: 'Reenie Beanie';
+	font-size: 84px;
+	text-align: center;
+	color: brown;
+	padding-top: 100PX;
+}
+
+.fifthpage h4 {
+	display: block;
+	font-family: 'Reenie Beanie';
+	font-size: 84px;
+	text-align: center;
+	color: brown;
+	padding-top: 100PX;
+}
+
+input[type=text]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 620px;
+  margin-top: 50px;
+}
+input[type=submit] {
+  width: 150px;
+  background-color: white;
+  color: gray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+input[type=submit]:hover {
+	background-color: gray;
+	color: white;
+}
+
+.fifthpage p {
+	font-size: 26px;
+	text-align: center;
+	top:550px;
+	font-family: 'Reenie Beanie';
+	color: black;
+	padding-top: 50px;
+}
+
+.fifthpage .btn_next {
+	width: 150px;
+	height: 30px;
+	border: 3px solid gray ;
+	margin-left: 45%;
+	margin-top: 2%;
+	text-align: center;
+	line-height: 28px;
+	transition:color 0.5s, background 3s;
+	color: gray;
+}
+
+.fifthpage .btn_next:hover {color:white; background:gray; border-color: gray;}
+
+
+.fourthpage p {
+	font-size: 26px;
+	text-align: center;
+	top:550px;
+	font-family: 'Reenie Beanie';
+	color: black;
+	padding-top: 40px;
+}
+
+.fourthpage img {
+	text-align: center;
+	margin-left: 37%;
+	margin-top: 2%;
+}
+
+.fifthpage img {
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 5%;
+}
+}

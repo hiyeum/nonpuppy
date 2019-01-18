@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> Loved... </title>
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			$('#fullpage').fullpage({
+      
+   			 });
+
+			var mySwiper = new Swiper('.swiper-container', {
+			  scrollbar: {
+			    el: '.swiper-scrollbar',
+			    draggable: true,
+			  },
+			});
+
+			$('.header_inner .m1').on('click',function(){
+				menuScrlFn(".fifthpage");
+			});
+			$('.header_inner .m2').on('click',function(){
+				menuScrlFn(".fourthpage");
+			});
+			$('.header_inner .m3').on('click',function(){
+				menuScrlFn(".thirdpage");
+			});
+
+			$('.header_inner .m4').on('click',function(){
+				menuScrlFn(".twopage");
+			});
+
+			function menuScrlFn(section_nav){
+				var pos = $(section_nav).offset().top -50;
+				console.log(pos);
+				$('html,body').stop().animate({
+					'scrollTop':pos
+				},800);
+			};
+
+			$('#bread').on('mouseover',function(){
+				$('.br').show();
+			});
+			$('#bread').on('mouseout',function(){
+				$('.br').hide();
+			});
+			$('#cherry').on('mouseover',function(){
+				$('.ch').show();
+			});
+			$('#cherry').on('mouseout',function(){
+				$('.ch').hide();
+			});
+			$('#pudding').on('mouseover',function(){
+				$('.pu').show();
+			});
+			$('#pudding').on('mouseout',function(){
+				$('.pu').hide();
+			});
+
+			$('#submit').on('click',function(){
+				alert('Thank You :3');
+			})
+		});
+	</script>
+
+</head>
+<body>
+
+<header class="header_container">
+	<ul class="header_inner">
+		<li><a href="#" class="m1">contact</a></li>
+		<li><a href="#" class="m2">together</a></li>
+		<li><a href="#" class="m3">weekend</a></li>
+		<li><a href="#" class="m4">want</a></li>
+	</ul>
+</header>
+
+<div id="fullpage">
+<div class="section">
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+        	
+	        
+				<div class="first">
+					<h1>I Want...</h1>
+					<p>coffee,warm,enjoy,time,drawing,book,art,calligraphy,shopping,trip,outside,present...</p>
+					<div class="btn_next"><a href="https://blog.naver.com/hyyun_22" target="_blank">download</a></div>
+				</div>
+			
+
+
+        </div>
+
+        <div class="swiper-slide">
+        	
+				<div class="second">
+						<h2>we together...</h2>
+						<p>I want to be with you even in the cold winter.</p>
+						<div class="btn_next"><a href="https://blog.naver.com/hyyun_22" target="_blank">download</a></div>
+				</div>
+			
+        </div>
+
+
+        <div class="swiper-slide">
+		  
+				<div class="third">
+						<h3>my weekend is...</h3>
+						<p>I just want to stay in bed.</p>
+						<div class="btn_next"><a href="https://blog.naver.com/hyyun_22" target="_blank">download</a></div>
+				</div>
+			
+        </div>       
+    </div>
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div> 
+</div>
+
+<div class="section">
+<section class="section_nav">
+<div class="twopage">
+	<h4>I like this...</h4>
+	
+	<p id="bread">bread</p>
+	<p id="cherry">cherry</p>
+	<p id="pudding">pudding</p>
+	
+	<div id="images">
+		<img src="../images/bread.png" class="br">
+		<img src="../images/cherry.png" class="ch">
+		<img src="../images/pudding.png" class="pu">
+	</div>
+	<div class="delicious">
+		<div class="dish">
+		<img src="../images/dish.png">
+		</div>
+	</div>
+</div>
+</section>
+</div>
+
+
+<div class="section">
+<section class="section_nav">
+<div class="thirdpage">
+	<h4>Sometimes...</h4>
+	<div class="am"><p>am</p></div>
+	<div class="pm"><p>pm</p></div>
+	
+</div>
+</section>
+</div>
+
+
+
+<div class="section">
+<section class="section_nav">
+<div class="fourthpage">
+	<h4>Do you Know?</h4>
+	<img src="../images/noname.png">
+	<p>The dog doesn't have a name.<br>
+	Do you know any good names?</p>
+	<input type="text" name="name" placeholder="ex)yammy" id="text">
+	<input type="submit" value="submit" id="submit">
+</div>
+</section>
+</div>
+
+
+
+<div class="section">
+<section class="section_nav">
+<div class="fifthpage">
+	<h4>Do you like it?</h4>
+	<img src="../images/phone.png">
+	<p>You can download the wallpaper by clicking the Download button below.</p>
+	<div class="btn_next"><a href="https://blog.naver.com/hyyun_22" target="_blank">download</a></div>
+</div>
+</section>
+</div>
+
+
+
+</body>	
+</html>
