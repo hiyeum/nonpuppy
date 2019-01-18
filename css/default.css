@@ -128,7 +128,7 @@ color: #7a0026;
 
 .twopage {
 	width: 1920px;
-	height: 1180px;
+	/*height: 1180px;*/
 	background-color: #fff6ed;
 }
 
@@ -197,7 +197,7 @@ color: #7a0026;
 
 .thirdpage {
 	width: 1920px;
-	height: 1080px;
+	/*height: 1080px;*/
 	background-color: #fff6ed;
 }
 
@@ -250,7 +250,7 @@ color: #7a0026;
 
 .fourthpage {
 	width: 1920px;
-	height: 1080px;
+	/*height: 1080px;*/
 	background-color: #fff6ed;
 }
 
@@ -350,4 +350,7 @@ input[type=submit]:hover {
 	margin-left: 40%;
 	margin-top: 5%;
 }
+
+.section {
+	background-color: #fff6ed;
 }
