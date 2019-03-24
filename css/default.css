@@ -141,6 +141,13 @@ color: #7a0026;
 	padding-top: 100PX;
 }
 
+.eat {
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
 #bread,#cherry,#pudding {
 	padding-top: 20px;
 	font-family: 'Reenie Beanie';
